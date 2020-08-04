@@ -633,7 +633,7 @@ jQuery(function($) {
             UI.toggle();
             UI.uiCollapse();
             //UI.input_number();
-            //UI.uiCounterup();
+            UI.uiCounterup();
             // UI.yt_play();
             // UI.psy();
         },
@@ -720,5 +720,9 @@ jQuery(function($) {
     // if($(window).width()>575){
     //     $('.hot-news .img img').height($('.hot-news-relate').height())
     // }
-
+    var pri_width = $('.column:nth-child(1) .item:nth-child(1) img').width();
+    $('.column:nth-child(1) .item:nth-child(1) img').height(pri_width);
+    $('.column:nth-child(2) .item:nth-child(2) img').height(pri_width);
+    $('.column:nth-child(1) .item:nth-child(2) img').height(pri_width * 1.355);
+    $('.column:nth-child(2) .item:nth-child(1) img').height(pri_width * 1.355);
 })
