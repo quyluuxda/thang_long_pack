@@ -367,6 +367,45 @@ jQuery(function($) {
                     ],
                 });
             }*/
+            if($('.cas-partner').length){
+                $('.cas-partner').slick({
+                    slidesToShow: 6,
+                    slidesToScroll: 1,
+                    //nextArrow: '<i class="cas-arrow smooth next"></i>',
+                    //prevArrow: '<i class="cas-arrow smooth prev"></i>',
+                    dots: true,
+                    arrows: false,
+                    autoplay: true,
+                    swipeToSlide: true,
+                    autoplaySpeed: 4000,
+                    responsive: [
+                    {
+                        breakpoint: 1199,
+                        settings: {
+                            slidesToShow: 4,
+                        }
+                    },
+                    {
+                        breakpoint: 991,
+                        settings: {
+                            slidesToShow: 3,
+                        }
+                    },
+                    {
+                        breakpoint: 700,
+                        settings: {
+                            slidesToShow: 3,
+                        }
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            slidesToShow: 2,
+                        }
+                    }
+                    ],
+                })
+            }
             $('.cas-prd-related').owlCarousel({
                 loop: true,
                 responsiveClass: true,
